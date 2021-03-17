@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 import styled from 'styled-components';
 
 // Pages
@@ -27,12 +27,10 @@ function App() {
     <Burger modalOpen={modalOpen} setModalOpen={setModalOpen} />
         <Menu modalOpen={modalOpen} setModalOpen={setModalOpen} />
     </StyledNavBarContainer>
-    <Router>
       <Switch>
       <Route exact path="/" render={() => <Home />} />
       <Route path="/Contact" render={() => <Contact />} />
       </Switch>
-    </Router>
     </>
   );
 }

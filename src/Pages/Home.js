@@ -45,31 +45,10 @@ const StyledAboutContainer = styled.div`
        font-size: 52px;
        color: #0A2268;
     }
- `
+ `  
 
 const ExtendedCarousel = styled(Carousel)`
- .carousel.carousel-slider{
-        position: center;
-        width: 30% !important;
-        margin-top: 0 !important;
-    }
-    .carousel .carousel-status{
-        display: none !important;
-    }
-    .thumbs-wrapper{
-       display: none;
-    
-    }
-    .carousel .slide .legend{
-        opacity: 0.8 !important;
-        padding : 0% !important;
-    }
-    .carousel .control-next.control-arrow:before {
-       display: none !important;
-    }
-    .carousel .control-prev.control-arrow:before {
-        display: none !important;
-    }
+ 
 
 `
 
@@ -121,14 +100,12 @@ const Home = () => {
             </StyledAboutContainer> 
            <StyledProjectContainer>
              <h1>Projects</h1>
-             <ExtendedCarousel>
+             {/* <ExtendedCarousel>
             
              <div><img src={Project1} alt="PikaChew" /></div>
-             {/* <div><img src={Project1} alt="Code Caffe"/></div>
-             <div><img src={Project1} alt="Thyme travel"/></div>
-             <div><img src={Project1} alt="Twilio"/></div>    */}
              
-             </ExtendedCarousel>
+             
+             </ExtendedCarousel> */}
              </StyledProjectContainer>       
              <StyledFooterContainer>
              <footer>
